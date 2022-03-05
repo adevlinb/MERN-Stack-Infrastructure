@@ -40,10 +40,10 @@ export function logOut() {
   localStorage.removeItem('token');
 }
 
-export async function checkToken() {
-  // Just so that you don't forget how to use .then
-  return usersAPI.checkToken()
-    .then(dateStr => new Date(dateStr));
-  // If using async/await - check this out...
-  // return new Date(await usersAPI.checkToken())
-}
+// export async function checkToken() {
+//   // Just so that you don't forget how to use .then
+//   return usersAPI.checkToken()
+//     .then(dateStr => new Date(dateStr));
+//   // If using async/await - check this out...
+//   // return new Date(await usersAPI.checkToken())
+// }
